@@ -2,10 +2,18 @@
 
 Créez la page d'accueil d'une agence de voyage avec HTML &amp; CSS - OPENCLASSROOMS-
 
-Le 18/02/23 - Début: 23H00 Fin: ==> H
+Le 18/02/23 - Début: 23H00 Fin: 00H40 ==> 1H40
+
 \_\_\_Ce que j'ai fait:
--Importation du dossier img
--Création du fuchier CSS
--Début du code HTML - HEADER -
+
+- Creation des dossiers : CSS + Icon + img
+- Importation du dossier img source
+- Création des fichiers style + index + readme
+- Début du code HTML - HEADER -
+- Création de la branche html
+
 \_\_\_Sur quoi j'ai bloqué:
--icone recherche, dois-je utiliser material symbols ?
+
+- l'utilisation de figma.
+- icones recherche, et autre (j'ai vu que je pouvais les telecharger ! apres !)
+- La composition de la "form"
