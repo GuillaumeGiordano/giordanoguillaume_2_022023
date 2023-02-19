@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <!-- HEAD -->
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- Link google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +14,6 @@
     />
     <!-- link for Css file -->
     <link rel="stylesheet" href="css/style.css" />
-
     <!-- Title -->
     <title>Booki</title>
   </head>
@@ -29,20 +28,22 @@
         class=""
         alt="logo"
       />
-      <!-- menu-->
+      <!-- menu de navigation-->
       <ul class="">
         <li class=""><a href="#">Hébergements</a></li>
         <li class=""><a href="#">Activités</a></li>
       </ul>
     </nav>
 
-    <h2>Trouvez un herbergement pour des vacances de rêve</h2>
-    <p>En plein centre-ville ou en pleine nature</p>
+    <h1 class="title-section">
+      Trouvez un herbergement pour des vacances de rêve
+    </h1>
+    <p class="information">En plein centre-ville ou en pleine nature</p>
 
     <!-- Formulaire de recherche -->
     <form action="post" class="">
-      <!-- En cliquant sur le label, cela nous dirige vers l'input -->
-      <label for="search" class=""
+      <!-- En cliquant sur le label, cela nous dirige vers l'input, pourquoi pas ! -->
+      <label for="search" class="i-localisation"
         ><img src="/icon/Location.png" alt="location"
       /></label>
       <!-- Search -->
@@ -50,7 +51,7 @@
         type="text"
         id="search"
         name="search"
-        class=""
+        class="search"
         placeholder="Marseille, France"
       />
       <!-- Button -->
@@ -58,27 +59,86 @@
         type="submit"
         id="btn-search"
         name="btn-search"
-        class=""
+        class="btn-search"
         value="Recherche"
       />
+      <!-- Menu filtre -->
+      <div class="ctn-filtre">
+        <h2 class="title-filter">Filtres</h2>
+        <button class="btn-filtre">Economique</button>
+        <button class="btn-filtre">Familial</button>
+        <button class="btn-filtre">Romantique</button>
+        <button class="btn-filtre">Animaux autorisés</button>
+      </div>
     </form>
+
+    <!-- Information sur le nombre de résultats -->
+    <div class="infobar">
+      <div class="circle">
+        <img src="/icon/i.png" alt="info" />
+      </div>
+      <p class="information">
+        Plus de 500 logements sont disponibles dans cette ville
+      </p>
+    </div>
   </header>
 
   <!-- BODY -->
-  <body class="">
-    <section class="type1">
-      <h2>Hébergements à Marseille</h2>
-      <div class="card">
-        <img src="" alt="" />
-        <h3></h3>
-        <p></p>
-        <div class="star"></div>
+  <body>
+    <!-- Section qui comporte les offres trouvées + les sponsorisées -->
+    <section class="section-offers">
+      <!-- Les offres trouvées -->
+      <div class="result">
+        <h1 class="title-section">Hébergements à Marseille</h1>
+        <div class="card-main">
+          <img src="" alt="" />
+          <h3 class="title-card"></h3>
+          <p></p>
+          <div class="stars"></div>
+        </div>
+      </div>
+      <!-- Les sponsorisées -->
+      <div class="sponso">
+        <div class="card-sponsored">
+          <img src="" alt="" />
+          <h3 class="title-card"></h3>
+          <p></p>
+          <div class="stars"></div>
+        </div>
       </div>
     </section>
-    <section class="type1"></section>
-    <section class="type2"></section>
+
+    <section class="section-activites">
+      <h1 class="title-section">Activités à Marseille</h1>
+      <div class="card-activity">
+        <img src="" alt="" />
+        <h3 class="title-card"></h3>
+        <p></p>
+        <div class="stars"></div>
+      </div>
+    </section>
   </body>
 
   <!-- FOOTER -->
-  <footer></footer>
+  <footer>
+    <!-- A Propos -->
+    <ul class="footer-liens">
+      <h2 class="title-filter">A propos</h2>
+      <li><a href="">Fonctionnement du site</a></li>
+      <li><a href="">Conditions générales</a></li>
+      <li><a href="">Données et confidentialité</a></li>
+    </ul>
+    <!-- Nos hébergements -->
+    <ul class="footer-liens">
+      <h2 class="title-filter">Nos hébergements</h2>
+      <li><a href="">Charte qualité</a></li>
+      <li><a href="">Proposer votre hôtel</a></li>
+    </ul>
+    <!-- Assistance -->
+    <ul class="footer-liens">
+      <h2 class="title-filter">Assistance</h2>
+      <li><a href="">Centre d'aide</a></li>
+      <li><a href="">Nous contacter</a></li>
+    </ul>
+  </footer>
 </html>
