@@ -60,8 +60,11 @@ Temps de travail cumul CSS : 0H0
 \_\_\_Ce que j'ai fait:
 
 - Début de mise en page CSS
-- HEADER ==> Nav
+- HEADER ==> Nav ok
+- Les 2 sections ==> EC
+- Footer ==> EC
 
 \_\_\_Sur quoi j'ai bloqué:
 
 - Les images je dois revoir le cours
+- Je me suis aperçu d'une erreur html, séparer les img et les infos par une Div
