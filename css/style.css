@@ -1,5 +1,81 @@
 *{
-    font-family: 'Raleway', sans-serif;
-    background-color: blue;
+    /* font-family: 'Raleway'; */
 }
+
+body{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    max-width: 1400px;
+    padding: 55px;
+    margin: auto;
+}
+
+.title-section{
+    padding: 0px;
+    margin: 0px;
+    font-weight: 700;
+    font-size: 22px;
+}
+.title-filter{
+    font-weight: 700;
+    font-size: 18px; 
+}
+.title-card{
+    font-weight: 700;
+    font-size: 16px;
+}
+.information{
+    font-weight: 400;
+    font-size: 16px;  
+}
+
+.nav {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 107px;
+    width: 100%;
+}
+
+.nav-logo{
+    width: 61px;
+    height: 19px;  
+}
+
+.nav-ul{
+    /* border: 1px solid green; */
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+}
+
+.nav-li{
+    /* border: 1px solid blue; */
+    margin: 0px;
+    width: 162px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #ffffff;
+}
+
+.nav-ul a {
+   text-decoration: none;
+   text-align: center;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   color: #0065FC;
+}
+
+.nav-li:hover {
+    border-top: 2px solid #0065FC;
+ }
 
