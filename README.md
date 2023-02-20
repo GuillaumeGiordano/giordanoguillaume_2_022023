@@ -55,7 +55,7 @@ Temps de travail cumul CSS : 0H0
 
 \_\_\_Sur quoi j'ai bloqué:
 
-//////////////////////////////////////////////////// Le 20/02/23 - Début: 13H30 Fin: ==>
+//////////////////////////////////////////////////// Le 20/02/23 - Début: 13H30 Fin: 17H00 ==> 03h30
 
 \_\_\_Ce que j'ai fait:
 
@@ -63,3 +63,5 @@ Temps de travail cumul CSS : 0H0
 - HEADER ==> Nav
 
 \_\_\_Sur quoi j'ai bloqué:
+
+- Les images je dois revoir le cours
