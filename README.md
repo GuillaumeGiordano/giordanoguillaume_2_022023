@@ -90,3 +90,34 @@ CSS //////////////////////////////////////////////////// Le 20/02/23 - Début: 2
 - CSS Form ==>
 - Responsive tablette ==>
 - Responsive tél ==>
+
+CSS //////////////////////////////////////////////////// Le 21/02/23 - Début: 21H00 Fin: 23H30 ==> 02H30 ///////// N° 7
+
+\_\_\_Ce que j'ai fait:
+
+- Reprendre les dimmenssions des cards ! je préfére comme ca :)
+- Reprise des icons sur https://kit.fontawesome.com j'ai enfin lu toute la notice :p
+- Modification du html (icons)
+- Début CSS FORM ==> Button search
+
+\_\_\_Sur quoi j'ai bloqué:
+
+- j'ai un probleme avec la position des étoiles et leurs dimmenssions !
+
+\_\_\_ Dans les prochaine session de code:
+
+- Revoir css title
+- Revoir css icons
+- Css filters
+- Responsive
+- Le code doit être valide aux validateurs W3C HTML et CSS
+- Le code HTML ne doit pas contenir de propriété CSS.
+- Lors du passage du desktop au mobile et à la tablette, ne pas dupliquer le code
+  HTML (exception faite dans le formulaire avec le mot “Rechercher” et l’icône de la
+  loupe).
+- Privilégier l’utilisation des classes CSS pour cibler un élément, plutôt que d’utiliser
+  le nom de l’élément lui-même.
+- Ne pas dupliquer des classes CSS inutilement. Exemple : si 4 éléments sont
+  identiques du point de vue de la mise en forme, alors utiliser une seule et même
+  classe CSS, et non pas 4.
+- Compatibilité navigateurs La maquette doit être compatible avec les dernières versions de Goog
