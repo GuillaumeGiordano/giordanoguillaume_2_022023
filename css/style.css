@@ -8,29 +8,36 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     /* align-items: stretch; */
-    max-width: 1400px;
+    max-width: 1430px;
     margin: auto;
 }
 
 header{
-    margin-left: 55px;
+    margin: 0 0 0 50px;
+}
+
+.form-search{
+    margin: 0 0 0 50px;
 }
 
 /* TITLES */
 .title-section{
-    margin: 0px;
+    margin: 4px 0;
     font-weight: 700;
     font-size: 22px;
 }
 .title-filter{
+    margin: 4px 0;
     font-weight: 700;
     font-size: 18px; 
 }
 .title-card{
+    margin: 4px 0;
     font-weight: 700;
     font-size: 16px;
 }
 .information{
+    margin: 4px 0;
     font-weight: 400;
     font-size: 16px;  
 }
@@ -83,15 +90,11 @@ header{
     border-top: 2px solid #0065FC;
  }
 
-
-
 /* SECTIONS OFFERS*/
 .section-offers{
-    border: 1px solid black;
     display: flex;
     justify-content: space-between;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 40px 50px;
 }
 
 /* OFFERS */
@@ -101,12 +104,10 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: start;
-    width: 60%;
     padding: 40px;
-    /* height: 625px; */
+    margin: 0 15px 0 0;
 }
 .ctn-offers{
-    border: 1px solid red;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -115,80 +116,115 @@ header{
     background: #FFFFFF;
     border-radius: 20px 20px 20px 20px;
     padding: 5px;
-    /* margin: 15px; */
-    Width :30%;
-    height:250px;
+    margin: 15px 0 ;
 }
+
 .card-main-img{
     border-radius: 20px 20px 0px 0px;
-    width: 100%;
-    height: 125px;
+    width: 236px;
+    height: 114px;
     object-fit: cover;
 }
+.details{
+    display: flex;
+    flex-direction: column;
+    margin: 2px 0;
+}
+
 /* SPONSORED */
 .offers-sponsored{
     background: #D9D9D9;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 30%;
-    /* height: 625px; */
+    padding: 40px;
+    margin: 0  0 0 15px;
+    align-items: center;
     border-radius:20px ;
 }
-.ctn-sponsored{
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.card-sponsored{
-    background: #FFFFFF;
-    border-radius: 20px;
-    width: 343px;
-    height: 144px;
-    display: flex;
-    flex-direction: row;
-}
-.img-sponsored{
-    width: 100%;
-    height: 90%;
-    object-fit: cover;
-}
-
-/* SECTION ACTIVITY */
-.section-activites{
-    /* border: 1px solid orange; */
-    display: flex;
-    flex-direction: column;
-    margin: 50px;
-}
-.ctn-activity{
-    /* border: 1px solid yellow; */
+.ctn-title-sponsored{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
+}
+.ctn-sponsored{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.card-sponsored{
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 15px 0;
+    width: 340px;
+}
+.card-sponsored a{
+    display: flex;
+}
+.img-sponsored{
+    border-radius: 20px 0px 0px 20px;
+    width: 127px;
+    height: 134px;
+    object-fit: cover;
+}
+.details-sponsored{ /* a revoir */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* a revoir */
+    margin-left: 15px;
+}
+
+
+/* SECTION ACTIVITY */
+.section-activites{
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+}
+.ctn-activity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 0;
 }
 .card-activity{
     background: #FFFFFF;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 10px 5px rgb(214, 214, 214);
-    width: 22%;
-    height: 500px;
-    
 }
 .card-activity img{
     border-radius: 20px 20px 0px 0px;
-    width: 100%;
-    height: 87%;
+    width: 300px;
+    height: 380px;
     object-fit: cover;
-  
-
+}
+.card-activity h3{
+    margin: 20px 0;
 }
 
 /* FOOTER */
 footer{
-    border: 1px solid black;
+    background: #F2F2F2;
     height: 225px;
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
+    align-items: center;
+    margin: 50px 50px 0 50px;
+}
+
+.footer-liens{
+    list-style: none;
+    margin: 40px;
+    padding: 0px;
+}
+
+.footer-liens a{
+    display: block;
+    margin: 6px 0px 6px 0px ;
+    text-decoration: none;
+    color: black;
 }

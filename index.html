@@ -40,52 +40,51 @@
       <h1 class="title-section">
         Trouvez un herbergement pour des vacances de rêve
       </h1>
-
       <p class="information">En plein centre-ville ou en pleine nature</p>
+    </header>
 
-      <!-- Formulaire de recherche -->
-      <form action="post" class="">
-        <!-- En cliquant sur le label, cela nous dirige vers l'input, pourquoi pas ! -->
-        <label for="search" class="i-localisation"
-          ><img src="/icon/Location.png" alt="location"
-        /></label>
-        <!-- Search -->
-        <input
-          type="text"
-          id="search"
-          name="search"
-          class="search"
-          placeholder="Marseille, France"
-        />
-        <!-- Button -->
-        <input
-          type="submit"
-          id="btn-search"
-          name="btn-search"
-          class="btn-search"
-          value="Recherche"
-        />
-        <!-- Menu filtre -->
-        <div class="ctn-filtre">
-          <h2 class="title-filter">Filtres</h2>
-          <button class="btn-filtre">
-            <img src="/icon/money.png" alt="money" />
-            Economique
-          </button>
-          <button class="btn-filtre">
-            <img src="/icon/body.png" alt="Familial" />
-            Familial
-          </button>
-          <button class="btn-filtre">
-            <img src="/icon/heart.png" alt="heart" />
-            Romantique
-          </button>
-          <button class="btn-filtre">
-            <img src="/icon/dog.png" alt="dog" />
-            Animaux autorisés
-          </button>
-        </div>
-      </form>
+    <!-- Formulaire de recherche -->
+    <form action="post" class="form-search">
+      <!-- En cliquant sur le label, cela nous dirige vers l'input, pourquoi pas ! -->
+      <label for="search" class="i-localisation"
+        ><img src="/icon/Location.png" alt="location"
+      /></label>
+      <!-- Search -->
+      <input
+        type="text"
+        id="search"
+        name="search"
+        class="search"
+        placeholder="Marseille, France"
+      />
+      <!-- Button -->
+      <input
+        type="submit"
+        id="btn-search"
+        name="btn-search"
+        class="btn-search"
+        value="Recherche"
+      />
+      <!-- Menu filtre -->
+      <div class="ctn-filtre">
+        <h2 class="title-filter">Filtres</h2>
+        <button class="btn-filtre">
+          <img src="/icon/money.png" alt="money" />
+          Economique
+        </button>
+        <button class="btn-filtre">
+          <img src="/icon/body.png" alt="Familial" />
+          Familial
+        </button>
+        <button class="btn-filtre">
+          <img src="/icon/heart.png" alt="heart" />
+          Romantique
+        </button>
+        <button class="btn-filtre">
+          <img src="/icon/dog.png" alt="dog" />
+          Animaux autorisés
+        </button>
+      </div>
 
       <!-- Information sur le nombre de résultats -->
       <div class="infobar">
@@ -96,7 +95,7 @@
           Plus de 500 logements sont disponibles dans cette ville
         </p>
       </div>
-    </header>
+    </form>
 
     <!-- Section qui comporte les offres trouvées + les sponsorisées -->
     <section class="section-offers" id="section-offers">
@@ -116,14 +115,16 @@
                 alt="marcus-loke-WQJvWU_HZFo-unsplash"
                 class="card-main-img"
               />
-              <h3 class="title-card">Auberge La Canebière</h3>
-              <p class="information">Nuit à partir de 25€</p>
-              <div class="stars">
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star2.png" alt="star" />
+              <div class="details">
+                <h3 class="title-card">Auberge La Canebière</h3>
+                <p class="information">Nuit à partir de 25€</p>
+                <div class="stars">
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star2.png" alt="star" />
+                </div>
               </div>
             </a>
           </div>
@@ -136,14 +137,16 @@
                 alt="fred-kleber-gTbaxaVLvsg-unsplash"
                 class="card-main-img"
               />
-              <h3 class="title-card">Hôtel du port</h3>
-              <p class="information">Nuit à partir de 52€</p>
-              <div class="stars">
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star2.png" alt="star" />
+              <div class="details">
+                <h3 class="title-card">Hôtel du port</h3>
+                <p class="information">Nuit à partir de 52€</p>
+                <div class="stars">
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star2.png" alt="star" />
+                </div>
               </div>
             </a>
           </div>
@@ -156,14 +159,16 @@
                 alt="reisetopia-B8WIgxA_PFU-unsplash"
                 class="card-main-img"
               />
-              <h3 class="title-card">Hôtel Les mouettes</h3>
-              <p class="information">Nuit à partir de 76€</p>
-              <div class="stars">
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star2.png" alt="star" />
+              <div class="details">
+                <h3 class="title-card">Hôtel Les mouettes</h3>
+                <p class="information">Nuit à partir de 76€</p>
+                <div class="stars">
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star2.png" alt="star" />
+                </div>
               </div>
             </a>
           </div>
@@ -176,14 +181,16 @@
                 alt="annie-spratt-Eg1qcIitAuA-unsplash"
                 class="card-main-img"
               />
-              <h3 class="title-card">Hôtel de la mer</h3>
-              <p class="information">Nuit à partir de 46€</p>
-              <div class="stars">
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star2.png" alt="star" />
+              <div class="details">
+                <h3 class="title-card">Hôtel de la mer</h3>
+                <p class="information">Nuit à partir de 46€</p>
+                <div class="stars">
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star2.png" alt="star" />
+                </div>
               </div>
             </a>
           </div>
@@ -196,14 +203,16 @@
                 alt="nicate-lee-kT-ZyaiwBe0-unsplash"
                 class="card-main-img"
               />
-              <h3 class="title-card">Auberge Le Panier</h3>
-              <p class="information">Nuit à partir de 23€</p>
-              <div class="stars">
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star2.png" alt="star" />
+              <div class="details">
+                <h3 class="title-card">Auberge Le Panier</h3>
+                <p class="information">Nuit à partir de 23€</p>
+                <div class="stars">
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star2.png" alt="star" />
+                </div>
               </div>
             </a>
           </div>
@@ -216,26 +225,29 @@
                 alt="febrian-zakaria-sjvU0THccQA-unsplash"
                 class="card-main-img"
               />
-              <h3 class="title-card">Hôtel Chez Amina</h3>
-              <p class="information">Nuit à partir de 96€</p>
-              <div class="stars">
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star2.png" alt="star" />
+              <div class="details">
+                <h3 class="title-card">Hôtel Chez Amina</h3>
+                <p class="information">Nuit à partir de 96€</p>
+                <div class="stars">
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star2.png" alt="star" />
+                </div>
               </div>
             </a>
           </div>
 
           <!-- FIN boucle-->
         </div>
+        <h2 class="title-filter">Afficher plus</h2>
       </div>
 
       <!-- Les sponsorisées -->
       <div class="offers-sponsored">
         <!-- Title -->
-        <div class="ctn-title-populaire">
+        <div class="ctn-title-sponsored">
           <h1 class="title-section">Les plus populaires</h1>
           <img src="/icon/chart.png" alt="chart" />
         </div>
@@ -248,15 +260,18 @@
               <img
                 src="/img/Images+Booki/Images Booki/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                 alt="emile-guillemot-Bj_rcSC5XfE-unsplash"
+                class="img-sponsored"
               />
-              <h3 class="title-card">Hôtel Le soleil du matin</h3>
-              <p class="information">Nuit à partir de 128€</p>
-              <div class="stars">
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star2.png" alt="star" />
+              <div class="details-sponsored">
+                <h3 class="title-card">Hôtel Le soleil du matin</h3>
+                <p class="information">Nuit à partir de 128€</p>
+                <div class="stars">
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star2.png" alt="star" />
+                </div>
               </div>
             </a>
           </div>
@@ -267,15 +282,18 @@
               <img
                 src="/img/Images+Booki/Images Booki/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
                 alt="aw-creative-VGs8z60yT2c-unsplash"
+                class="img-sponsored"
               />
-              <h3 class="title-card">Chambres d'hôtes Au coeur de l'eau</h3>
-              <p class="information">Nuit à partir de 71€</p>
-              <div class="stars">
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star2.png" alt="star" />
+              <div class="details-sponsored">
+                <h3 class="title-card">Chambres d'hôtes Au coeur de l'eau</h3>
+                <p class="information">Nuit à partir de 71€</p>
+                <div class="stars">
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star2.png" alt="star" />
+                </div>
               </div>
             </a>
           </div>
@@ -288,15 +306,16 @@
                 alt="febrian-zakaria-sjvU0THccQA-unsplash"
                 class="img-sponsored"
               />
-
-              <h3 class="title-card">Hôtel Bleu et Blanc</h3>
-              <p class="information">Nuit à partir de 68€</p>
-              <div class="stars">
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star.png" alt="star" />
-                <img src="/icon/star2.png" alt="star" />
+              <div class="details-sponsored">
+                <h3 class="title-card">Hôtel Bleu et Blanc</h3>
+                <p class="information">Nuit à partir de 68€</p>
+                <div class="stars">
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star.png" alt="star" />
+                  <img src="/icon/star2.png" alt="star" />
+                </div>
               </div>
             </a>
           </div>
@@ -356,21 +375,21 @@
       <!-- A Propos -->
       <ul class="footer-liens">
         <h2 class="title-filter">A propos</h2>
-        <li><a href="">Fonctionnement du site</a></li>
-        <li><a href="">Conditions générales</a></li>
-        <li><a href="">Données et confidentialité</a></li>
+        <li><a href="#">Fonctionnement du site</a></li>
+        <li><a href="#">Conditions générales</a></li>
+        <li><a href="#">Données et confidentialité</a></li>
       </ul>
       <!-- Nos hébergements -->
       <ul class="footer-liens">
         <h2 class="title-filter">Nos hébergements</h2>
-        <li><a href="">Charte qualité</a></li>
-        <li><a href="">Proposer votre hôtel</a></li>
+        <li><a href="#">Charte qualité</a></li>
+        <li><a href="#">Proposer votre hôtel</a></li>
       </ul>
       <!-- Assistance -->
       <ul class="footer-liens">
         <h2 class="title-filter">Assistance</h2>
-        <li><a href="">Centre d'aide</a></li>
-        <li><a href="">Nous contacter</a></li>
+        <li><a href="#">Centre d'aide</a></li>
+        <li><a href="#">Nous contacter</a></li>
       </ul>
     </footer>
   </body>

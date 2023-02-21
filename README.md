@@ -5,7 +5,7 @@ Créez la page d'accueil d'une agence de voyage avec HTML &amp; CSS - OPENCLASSR
 Temps de travail cumul HTML : 03H55
 Temps de travail cumul CSS : 0H0
 
-//////////////////////////////////////////////////// Le 18/02/23 - Début: 23H00 Fin: 00H40 ==> 1H40
+HTML //////////////////////////////////////////////////// Le 18/02/23 - Début: 23H00 Fin: 00H40 ==> 1H40 ///////// N° 1
 
 \_\_\_Ce que j'ai fait:
 
@@ -23,7 +23,7 @@ Temps de travail cumul CSS : 0H0
 - La composition de la "form"
 - choix des balises pour les titres
 
-//////////////////////////////////////////////////// Le 19/02/23 - Début: 09H00 Fin:09H30 ==> 00H30
+HTML //////////////////////////////////////////////////// Le 19/02/23 - Début: 09H00 Fin:09H30 ==> 00H30 ///////// N° 2
 
 \_\_\_Ce que j'ai fait:
 
@@ -36,7 +36,7 @@ Temps de travail cumul CSS : 0H0
 
 - Je suis toujours indécis sur les titres
 
-//////////////////////////////////////////////////// Le 20/02/23 - Début: 09H30 Fin:10H30 ==> 1H00
+HTML //////////////////////////////////////////////////// Le 20/02/23 - Début: 09H30 Fin:10H30 ==> 1H00 ///////// N° 3
 
 \_\_\_Ce que j'ai fait:
 
@@ -47,7 +47,7 @@ Temps de travail cumul CSS : 0H0
 - Les cards doivent etre cliquable, je ne suis pas sur de ce que j'ai fait :/
 - Je me demande comment je vais flex les cards dans offres car si j'utilise row-wrap le titre ne va pas aller ! dois-je créer un ctn pour les cards ?
 
-//////////////////////////////////////////////////// Le 20/02/23 - Début: 11H15 Fin: 12H00 ==> 00H45
+HTML //////////////////////////////////////////////////// Le 20/02/23 - Début: 11H15 Fin: 12H00 ==> 00H45 ///////// N° 4
 
 \_\_\_Ce que j'ai fait:
 
@@ -55,12 +55,12 @@ Temps de travail cumul CSS : 0H0
 
 \_\_\_Sur quoi j'ai bloqué:
 
-//////////////////////////////////////////////////// Le 20/02/23 - Début: 13H30 Fin: 17H00 ==> 03h30
+CSS //////////////////////////////////////////////////// Le 20/02/23 - Début: 13H30 Fin: 17H00 ==> 03h30///////// N° 5
 
 \_\_\_Ce que j'ai fait:
 
 - Début de mise en page CSS
-- HEADER ==> Nav ok
+- HEADER ==> T
 - Les 2 sections ==> EC
 - Footer ==> EC
 
@@ -68,3 +68,25 @@ Temps de travail cumul CSS : 0H0
 
 - Les images je dois revoir le cours
 - Je me suis aperçu d'une erreur html, séparer les img et les infos par une Div
+
+CSS //////////////////////////////////////////////////// Le 20/02/23 - Début: 21H30 Fin: 01H00 ==> 03H30 ///////// N° 6
+
+\_\_\_Ce que j'ai fait:
+
+- Correction html
+- Les 2 sections ==> T
+- Footer ==> T
+- Nav ==> T
+
+\_\_\_Sur quoi j'ai bloqué:
+
+- dimmenssion des cards !, ca ma rendu fou !
+- Je crois toujour que les icons sont pas bon mais bon .....
+
+\_\_\_Prochaine session de code:
+
+- Revoir css titles
+- revoir icons
+- CSS Form ==>
+- Responsive tablette ==>
+- Responsive tél ==>
