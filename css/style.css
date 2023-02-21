@@ -171,13 +171,20 @@ header{
     height: 134px;
     object-fit: cover;
 }
+
+
+/* ************************************************************ A MODIFIER !!!!!!!!!!! */
+
 .details-sponsored{ /* a revoir */
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* a revoir */
     margin-left: 15px;
 }
-
+.stars{
+    align-self: flex-end;
+}
+/* ************************************************************************************** */
 
 /* SECTION ACTIVITY */
 .section-activites{
