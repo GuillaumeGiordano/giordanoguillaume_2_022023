@@ -16,11 +16,20 @@ header{
     margin: 0 0 0 50px;
 }
 
-.form-search{
-    margin: 0 0 0 50px;
+/* **********************************************************  ICONS  */
+
+span{
+    display: block;
+    color: #0065FC;   
+    margin: 10px;
 }
 
-/* TITLES */
+.stars span{
+    margin: 0;
+}
+
+
+/******************************************************************** TITLES */
 .title-section{
     margin: 4px 0;
     font-weight: 700;
@@ -42,7 +51,7 @@ header{
     font-size: 16px;  
 }
 
-/* NAVIGATION */
+/***************************************************************** NAVIGATION */
 .nav {
     /* border: 1px solid red; */
     display: flex;
@@ -91,6 +100,9 @@ header{
  }
 
 /* *********************************************************** FORM */
+.form-search{
+    margin: 0 0 0 50px;
+}
 
 .nav-search{
     display: flex;
@@ -147,14 +159,65 @@ header{
 }
 
 /* ************************************************************  FILTER */
+.ctn-filtre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 914px;
+    padding: 0;
+    margin: 30px 0;
+}
 
 .btn-filtre{
-    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    height: 50px;
+    margin: 0;
+    padding: 0 25px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.btn-filtre:hover{
+    background-color: #DEEBFF;
+}
+
+/* ************************************************************** RESULTATS */
+
+.infobar{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    text-align: center;
+    padding: 0;
+    margin-right: 10px;
 
 }
 
-
-
+.circle span {
+    scale: 0.6;
+}
 
 
 /* *******************************************************  SECTIONS OFFERS*/
@@ -176,7 +239,7 @@ header{
     justify-content: start;
     padding: 40px;
     margin: 0 15px 0 0;
-    width: 63%;
+    width: 70%;
 }
 .ctn-offers{
     display: flex;
@@ -188,14 +251,12 @@ header{
     border-radius: 20px 20px 20px 20px;
     padding: 5px;
     margin: 15px 0 ;
-    height: 199px;
+    height: 190px;
     width: 30%;
 }
 
 .card-main-img{
     border-radius: 15px 15px 0px 0px;
-    /* width: 236px;
-    height: 114px; */
     height: 60%;
     width: 100%;
     object-fit: cover;
@@ -203,7 +264,7 @@ header{
 .details{
     display: flex;
     flex-direction: column;
-    margin: 2px 0;
+    margin: 0 15px;
 }
 
 /* *************************************************   SPONSORED */
@@ -215,7 +276,7 @@ header{
     margin: 0  0 0 15px;
     align-items: center;
     border-radius:20px ;
-    width: 33%;
+    width: 30%;
 }
 .ctn-title-sponsored{
     display: flex;
@@ -236,16 +297,13 @@ header{
     border-radius: 20px;
     padding: 5px;
     margin: 15px 0;
-    height: 144px;
-    /* width: 340px; */
+    height: 134px;
 }
 .card-sponsored a{
     display: flex;
 }
 .img-sponsored{
     border-radius: 15px 0px 0px 15px;
-    /* width: 127px;
-    height: 134px; */
     width: 37%;
     object-fit: cover;
 }
@@ -260,6 +318,24 @@ header{
     margin-left: 15px;
     width: 100%;
 }
+
+.details-sponsored .stars{
+    
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    align-self: flex-end;
+}
+
+.stars span {
+    
+    scale: 0.7;
+}
+
+
 
 /* ************************************************************************************** */
 
@@ -292,15 +368,6 @@ header{
 .card-activity h3{
     margin: 20px 0;
 }
-
-
-/* **********************************************************  ICONS  */
-
-.stars{
-    color: #0065FC;
-}
-
-
 
 
 /* **********************************************************FOOTER */

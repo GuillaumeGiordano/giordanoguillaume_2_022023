@@ -121,3 +121,31 @@ CSS //////////////////////////////////////////////////// Le 21/02/23 - Début: 2
   identiques du point de vue de la mise en forme, alors utiliser une seule et même
   classe CSS, et non pas 4.
 - Compatibilité navigateurs La maquette doit être compatible avec les dernières versions de Goog
+
+CSS //////////////////////////////////////////////////// Le 22/02/23 - Début: 09H30 Fin: 11H00 ==> 01H30 ///////// N° 8
+
+\_\_\_Ce que j'ai fait:
+
+- CSS btn Filters
+- CSS info resultats
+- Revoir css icons
+- Revoir css title EC
+
+\_\_\_Sur quoi j'ai bloqué:
+
+- redimmenssioner les icons, j'ai trouvé un moyen mais je pense que c'est du bricologe :/
+
+\_\_\_ Dans les prochaine session de code:
+
+- Responsive
+- Le code doit être valide aux validateurs W3C HTML et CSS
+- Le code HTML ne doit pas contenir de propriété CSS.
+- Lors du passage du desktop au mobile et à la tablette, ne pas dupliquer le code
+  HTML (exception faite dans le formulaire avec le mot “Rechercher” et l’icône de la
+  loupe).
+- Privilégier l’utilisation des classes CSS pour cibler un élément, plutôt que d’utiliser
+  le nom de l’élément lui-même.
+- Ne pas dupliquer des classes CSS inutilement. Exemple : si 4 éléments sont
+  identiques du point de vue de la mise en forme, alors utiliser une seule et même
+  classe CSS, et non pas 4.
+- Compatibilité navigateurs La maquette doit être compatible avec les dernières versions de Goog
