@@ -154,9 +154,12 @@ CSS //////////////////////////////////////////////////// Le 22/02/23 - Début: 2
 
 \_\_\_Ce que j'ai fait:
 
-- Le code doit être valide aux validateurs W3C HTML
+- Le code doit être valide aux validateurs W3C HTML et CSS
 - Reprise des chemins src img
 - Revoir css title
+- Le code HTML ne doit pas contenir de propriété CSS. OK
+- Privilégier l’utilisation des classes CSS pour cibler un élément, plutôt que d’utiliser
+  le nom de l’élément lui-même. OK
 
 \_\_\_Sur quoi j'ai bloqué:
 
@@ -165,13 +168,9 @@ CSS //////////////////////////////////////////////////// Le 22/02/23 - Début: 2
 \_\_\_ Dans les prochaine session de code:
 
 - Responsive
-- Le code doit être valide aux validateurs W3C HTML et CSS
-- Le code HTML ne doit pas contenir de propriété CSS.
 - Lors du passage du desktop au mobile et à la tablette, ne pas dupliquer le code
   HTML (exception faite dans le formulaire avec le mot “Rechercher” et l’icône de la
   loupe). ??????????
-- Privilégier l’utilisation des classes CSS pour cibler un élément, plutôt que d’utiliser
-  le nom de l’élément lui-même.
 - Ne pas dupliquer des classes CSS inutilement. Exemple : si 4 éléments sont
   identiques du point de vue de la mise en forme, alors utiliser une seule et même
   classe CSS, et non pas 4.
