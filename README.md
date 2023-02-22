@@ -156,7 +156,7 @@ CSS //////////////////////////////////////////////////// Le 22/02/23 - Début: 2
 
 - Le code doit être valide aux validateurs W3C HTML
 - Reprise des chemins src img
-- Revoir css title EC
+- Revoir css title
 
 \_\_\_Sur quoi j'ai bloqué:
 
