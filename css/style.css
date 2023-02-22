@@ -1,9 +1,9 @@
 *{
-    /* font-family: 'Raleway'; */
+    font-family: 'Raleway';
 }
 
 body{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -30,6 +30,7 @@ span{
 
 
 /******************************************************************** TITLES */
+
 .title-section{
     margin: 4px 0;
     font-weight: 700;
@@ -121,9 +122,7 @@ span{
     height: 49px;
     border-radius: 15px 0 0 15px;
 }
-.i-localisation span {
-    scale: 1.1;
-}
+
 
 .search{
     display: block;
@@ -213,10 +212,6 @@ span{
     padding: 0;
     margin-right: 10px;
 
-}
-
-.circle span {
-    scale: 0.6;
 }
 
 
@@ -330,10 +325,7 @@ span{
     align-self: flex-end;
 }
 
-.stars span {
-    
-    scale: 0.7;
-}
+
 
 
 
