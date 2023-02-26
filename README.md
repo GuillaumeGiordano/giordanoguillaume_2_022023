@@ -52,3 +52,13 @@ Temps de travail cumul : 02H10
 - Creations des cards activités
 
 \_\_\_Sur quoi j'ai bloqué:
+
+HTML /////////////////////////////////////////////////////////// Le 26/02/23 - Début: 16H00 Fin: ==>
+
+\_\_\_Ce que j'ai fait:
+
+- Correction du html
+
+\_\_\_Sur quoi j'ai bloqué:
+
+- Puis-je mettre deux sections à la suite ?
