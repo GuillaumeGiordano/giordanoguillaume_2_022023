@@ -21,30 +21,29 @@
 
   <!-- -------------------------------------------------------------------  BODY -->
   <body>
+    <!-- ---------------------------------------------------------------  HEADER -->
+    <header class="header">
+      <!-- Logo -->
+      <img
+        src="/img/logo/Booki.png"
+        class="header__logo"
+        alt="logo booki, bleu"
+      />
+      <!------------------------------------ NAV -->
+      <nav class="header__nav">
+        <!-- menu de navigation-->
+        <ul class="header__ul">
+          <li class="header__li">
+            <a href="#results">Hébergements</a>
+          </li>
+          <li class="header__li">
+            <a href="#activitys">Activités</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <!-- -----------------------------------------------------------------  MAIN -->
     <main class="main">
-      <!-- ---------------------------------------------------------------  HEADER -->
-      <header class="header">
-        <!-- Logo -->
-        <img
-          src="/img/logo/Booki.png"
-          class="header__logo"
-          alt="logo booki, bleu"
-        />
-        <!-- NAV -->
-        <nav class="header__nav">
-          <!-- menu de navigation-->
-          <ul class="header__ul">
-            <li class="header__li">
-              <a href="#results">Hébergements</a>
-            </li>
-            <li class="header__li">
-              <a href="#activitys">Activités</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
       <!-- ----------------------------------------------------------------  SECTION TITLE + SEARCH -->
       <section class="search">
         <!-- Titre principal -->
@@ -57,7 +56,7 @@
         <form action="post" class="search__form">
           <div class="search__ctn">
             <!-- En cliquant sur le label, cela nous dirige vers l'input, pourquoi pas ! -->
-            <label for="search__label" class="i-localisation">
+            <label for="search" class="search__label">
               <i class="fa-solid fa-location-dot"></i>
             </label>
             <!-- Search -->
@@ -65,38 +64,43 @@
               type="text"
               id="search"
               name="search"
-              class="search__i-text"
+              class="search__text"
               placeholder="Marseille, France"
             />
             <!-- Button -->
-            <button class="">
+
+            <button class="search__btn search__btn--size">
               <!-- utiliser display: none pour faire disparaitre l'un ou l'autre suivant la taille de l'écran ! -->
-              <i class="fa-solid fa-money-bill-wave"></i>
-              <span class="search__btn search__btn--actif">Recherche</span>
+              <!-- <i class="fa-solid fa-money-bill-wave search__i--display"></i> -->
+              <span class="search__spam search__spam--display">Recherche</span>
             </button>
           </div>
         </form>
       </section>
 
-      <!-- --------------------------------------------------------------  SECTION FILTRES -->
+      <!-- --------------------------------------------------------------  SECTION FILTRES ----------------- j'en suis la !!-->
       <section class="filtres">
-        <!-- Filters title -->
-        <h2 class="filtres__title">Filtres</h2>
-        <!-- Menu filtre -->
-        <ul class="filtres__ul">
-          <li class="filtres__li">
-            <i class="fa-solid fa-money-bill-wave"></i>Economique
-          </li>
-          <li class="filtres__li">
-            <i class="fa-solid fa-person"></i>Familial
-          </li>
-          <li class="filtres__li">
-            <i class="fa-solid fa-heart"></i>Romantique
-          </li>
-          <li class="filtres__li">
-            <i class="fa-solid fa-dog"></i>animaux autorisés
-          </li>
-        </ul>
+        <!-- Navigation des liens filtres -->
+        <nav class="filtres__nav">
+          <!-- Filters title -->
+          <h2 class="filtres__title">Filtres</h2>
+          <!-- Menu filtre -->
+          <ul class="filtres__ul">
+            <li class="filtres__li">
+              <i class="fa-solid fa-money-bill-wave"></i>
+              <p>Economique</p>
+            </li>
+            <li class="filtres__li">
+              <i class="fa-solid fa-person"></i>Familial
+            </li>
+            <li class="filtres__li">
+              <i class="fa-solid fa-heart"></i>Romantique
+            </li>
+            <li class="filtres__li">
+              <i class="fa-solid fa-dog"></i>animaux autorisés
+            </li>
+          </ul>
+        </nav>
         <!-- Informations result -->
         <p class="filtres__details">
           <i class="fa-solid fa-info"></i>

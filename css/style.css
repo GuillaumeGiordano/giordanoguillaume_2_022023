@@ -1,4 +1,471 @@
 *{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway';
 }
 
+body{
+    margin: 0;
+}
+
+.main{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 1440px;
+    padding: 0 0 0 50px;
+    margin: auto;
+}
+
+/***************************************************************** HEADER */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 0 30px;
+}
+
+.header__logo{
+    width: 60px;
+    height: 20px;
+}
+
+/* ***************************************** NAVIGATION */
+.header__nav {
+    /* border: 1px solid red; */
+    height: 100px;
+}
+
+.header__ul{
+    /* border: 1px solid green; */
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+}
+
+.header__li{
+    /* border: 1px solid blue; */
+    margin: 0px;
+    width: 162px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #ffffff;
+}
+
+.header__ul a {
+   text-decoration: none;
+   text-align: center;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   color: #0065FC;
+}
+
+.header__li:hover {
+    border-top: 2px solid #0065FC;
+ }
+
+/***************************************************************** SECTION SEARCH */
+
+.search{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+/* TITRE SECTION */
+.search__title{
+    margin: 4px 0;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+/* INFORMATION */
+.search__details{
+    margin: 4px 0;
+    font-weight: 400;
+    font-size: 16px;  
+}
+
+/* ***************************************** FORM */
+
+.search__ctn{
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 20px 0 20px 0;
+    height: 50px;
+}
+
+.search__label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    width: 50px;
+    height: 100%;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0 0 15px;
+}
+
+.search__text{
+    display: block;
+    width: 233px;
+    height: 100%;
+    border: 1px solid #F2F2F2;
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+}
+
+.search__btn{
+    /* display: block; */
+    background: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    height: 100%;
+    margin: 0;
+    cursor: pointer;
+}
+
+.search__btn--size{
+    width: 132px;
+}
+
+.search__spam{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.search__spam--display{
+    display: block;
+}
+
+/*****************************************************************  FILTER */
+.filtres{
+    display: flex;
+    flex-direction: column;
+    width: 915px;
+    padding: 0;
+    margin: 30px 0;
+}
+
+/* TITRE SECTION */
+.filtres__title{
+    margin: 4px 0;
+    font-weight: 700;
+    font-size: 18px; 
+}
+.filtres__nav{
+    display: flex;
+    align-items: center;
+
+}
+
+.filtres__ul{
+    display: flex;
+    margin-left: 10px;
+    padding: 0;
+}
+
+.filtres__li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    height: 50px;
+    margin-right: 10px;
+    padding: 0 25px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.filtres__li:hover{
+    background-color: #DEEBFF;
+}
+
+/* INFORMATION */
+.filtres__details{
+    margin: 4px 0;
+    font-weight: 400;
+    font-size: 16px;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* **********************************************************  ICONS  */
+
+span{
+    display: block;
+    color: #0065FC;   
+    margin: 10px;
+}
+
+.stars span{
+    margin: 0;
+}
+
+
+/******************************************************************** TITLES */
+
+.title-section{
+    margin: 4px 0;
+    font-weight: 700;
+    font-size: 22px;
+}
+.title-filter{
+    margin: 4px 0;
+    font-weight: 700;
+    font-size: 18px; 
+}
+.title-card{
+    margin: 4px 0;
+    font-weight: 700;
+    font-size: 16px;
+}
+.information{
+    margin: 4px 0;
+    font-weight: 400;
+    font-size: 16px;  
+}
+
+
+/* ************************************************************** RESULTATS */
+
+.infobar{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    text-align: center;
+    padding: 0;
+    margin-right: 10px;
+
+}
+
+
+/* *******************************************************  SECTIONS OFFERS*/
+.section-offers{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 50px;
+}
+.section-offers a {
+    text-decoration: none;
+    color: black;
+}
+/* **********************************************************  OFFERS */
+.offers-main{
+    background: #D9D9D9;
+    border-radius:20px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 40px;
+    margin: 0 15px 0 0;
+    width: 70%;
+}
+.ctn-offers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card-main{
+    background: #FFFFFF;
+    border-radius: 20px 20px 20px 20px;
+    padding: 5px;
+    margin: 15px 0 ;
+    height: 190px;
+    width: 30%;
+}
+
+.card-main-img{
+    border-radius: 15px 15px 0px 0px;
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+/* *************************************************   SPONSORED */
+.offers-sponsored{
+    background: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: 0  0 0 15px;
+    align-items: center;
+    border-radius:20px ;
+    width: 30%;
+}
+.ctn-title-sponsored{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.ctn-sponsored{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.card-sponsored{
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 15px 0;
+    height: 134px;
+}
+.card-sponsored a{
+    display: flex;
+}
+.img-sponsored{
+    border-radius: 15px 0px 0px 15px;
+    width: 37%;
+    object-fit: cover;
+}
+
+/* ************************************************************ A MODIFIER position des étoiles !!!!!!!!!!! */
+
+.details-sponsored{ 
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-left: 15px;
+    width: 100%;
+}
+
+.details-sponsored .stars{
+    
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    align-self: flex-end;
+}
+
+
+
+
+
+/* ************************************************************************************** */
+
+/* **************************************************   SECTION ACTIVITY */
+.section-activites{
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+}
+.ctn-activity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+.card-activity{
+    background: #FFFFFF;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 10px 10px 5px rgb(214, 214, 214);
+    width: 22%;
+}
+.card-activity img{
+    border-radius: 20px 20px 0px 0px;
+    /* width: 300px;
+    height: 380px; */
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+.card-activity h3{
+    margin: 20px 0;
+}
+
+
+/* **********************************************************FOOTER */
+footer{
+    background: #F2F2F2;
+    height: 225px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 50px 50px 0 50px;
+}
+
+.footer-liens{
+    list-style: none;
+    margin: 40px;
+    padding: 0px;
+}
+
+.footer-liens a{
+    display: block;
+    margin: 6px 0px 6px 0px ;
+    text-decoration: none;
+    color: black;
+}
