@@ -3,18 +3,11 @@
 }
 
 body{
-    margin: 0;
-}
-
-.main{
-    /* border: 1px solid black; */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     max-width: 1440px;
-    padding: 0 0 0 50px;
     margin: auto;
 }
+
+
 
 /***************************************************************** HEADER */
 .header{
@@ -68,10 +61,16 @@ body{
     border-top: 2px solid #0065FC;
  }
 
-/***************************************************************** SECTION SEARCH */
+/***************************************************************** MAIN */
+ .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 0 0 50px;
+}
 
+/***************************************************************** SECTION SEARCH */
 .search{
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -99,7 +98,7 @@ body{
     flex-direction: row;
     align-items: center;
     padding: 0;
-    margin: 20px 0 20px 0;
+    margin: 20px 0;
     height: 50px;
 }
 
@@ -163,9 +162,15 @@ body{
 .filtres{
     display: flex;
     flex-direction: column;
-    width: 915px;
     padding: 0;
-    margin: 30px 0;
+    margin: 10px 0;
+}
+
+.filtres__nav{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 /* TITRE SECTION */
@@ -174,27 +179,24 @@ body{
     font-weight: 700;
     font-size: 18px; 
 }
-.filtres__nav{
-    display: flex;
-    align-items: center;
-
-}
 
 .filtres__ul{
     display: flex;
+    margin: 0;
     margin-left: 10px;
     padding: 0;
+    height: 50px;
 }
 
 .filtres__li{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
 
     border: 2px solid #D9D9D9;
     border-radius: 25px;
-    height: 50px;
+    height: 100%;
     margin-right: 10px;
     padding: 0 25px;
 
@@ -216,6 +218,264 @@ body{
     font-size: 16px;  
 }
 
+/***************************************************************** RESULTATS */
+.filtres__details{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin: 5px 0;
+    font-weight: 400;
+    font-size: 16px;  
+}
+
+.circle{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 25px;
+    height: 25px;
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+
+}
+
+/***************************************************************** DIV RESULTS = OFFERS + SPONSO*/
+.results{
+    display: flex;
+    justify-content: space-between;
+}
+
+.results__section{
+    background: #D9D9D9;
+    border-radius:20px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 40px;
+}
+
+.results a {
+    text-decoration: none;
+    color: black;
+}
+
+/* **********************************************************  OFFERS */
+
+.offerts{
+    margin: 0 15px 0 0;
+    width: 70%;
+}
+
+/* Titre Section */
+.offers__title{
+    margin: 4px 0;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.offers__ctn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.offers__card{
+    background: #FFFFFF;
+    border-radius: 20px 20px 20px 20px;
+    padding: 5px;
+    margin: 15px 0 ;
+    height: 190px;
+    width: 30%;
+}
+
+.offers__img{
+    border-radius: 15px 15px 0px 0px;
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* TITRE CARD */
+.offers__place{
+    margin: 4px 0;
+    font-weight: 700;
+    font-size: 16px;
+}
+/* INFO */
+.offers__infos{
+    margin: 4px 0;
+    font-weight: 400;
+    font-size: 16px;  
+}
+
+.offers__details{
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+.offers__stars{
+
+}
+
+/* TITRE FILTRE */
+.offers__more{
+    margin: 4px 0;
+    font-weight: 700;
+    font-size: 18px; 
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* *************************************************   SPONSORED */
+.sponsos{
+    align-items: center;
+    margin: 0  0 0 15px; 
+    width: 30%;
+}
+
+/* TITRE SECTION */
+.sponsos__title{
+    margin: 4px 0;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.sponsos__title--flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sponsos__ctn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.sponsos__card{
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 15px 0;
+    height: 134px;
+}
+
+.sponsos__card a{
+    display: flex;
+}
+
+.sponsos__img{
+    border-radius: 15px 0px 0px 15px;
+    width: 37%;
+    object-fit: cover;
+}
+
+.sponsos__details{ 
+    display: flex;
+    flex-direction: column;
+    /* justify-content: start; */
+    margin-left: 15px;
+    /* width: 63%; */
+}
+
+/* TITRE CARD */
+.sponsos__place{
+    margin: 4px 0;
+    font-weight: 700;
+    font-size: 16px;
+}
+/* INFO */
+.sponsos__infos{
+    margin: 4px 0;
+    font-weight: 400;
+    font-size: 16px;  
+}
+
+
+/*  A MODIFIER position des étoiles !!!!!!!!!!!       FAUX !!      */
+.sponsos__stars {
+
+}
+
+/* *************************************************   SECTION ACTIVITY */
+.activitys{
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+}
+
+.activitys__title{
+    margin: 4px 0;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.activitys__ctn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.activitys__card{
+    background: #FFFFFF;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 10px 10px 5px rgb(214, 214, 214);
+    width: 22%;
+}
+
+.activitys__img{
+    border-radius: 20px 20px 0px 0px;
+    /* width: 300px;
+    height: 380px; */
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+
+.activitys__place{
+    margin: 20px 0;
+}
+
+
+/* ********************************************************** FOOTER */
+.footer{
+    background: #F2F2F2;
+    height: 225px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 50px 50px 0 50px;
+}
+
+.footer__ul{
+    list-style: none;
+    margin: 40px;
+    padding: 0px;
+}
+
+/* TITRE CARD */
+.footer__titles{
+    margin: 4px 0;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.footer__ul a{
+    display: block;
+    margin: 6px 0px 6px 0px ;
+    text-decoration: none;
+    color: black;
+}
 
 
 
@@ -230,13 +490,7 @@ body{
 
 
 
-
-
-
-
-
-
-
+/* ANCIEN */
 
 
 /* **********************************************************  ICONS  */
@@ -276,196 +530,4 @@ span{
 }
 
 
-/* ************************************************************** RESULTATS */
 
-.infobar{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-}
-
-.circle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 24px;
-    height: 24px;
-    border: 1px solid #D9D9D9;
-    border-radius: 50%;
-    text-align: center;
-    padding: 0;
-    margin-right: 10px;
-
-}
-
-
-/* *******************************************************  SECTIONS OFFERS*/
-.section-offers{
-    display: flex;
-    justify-content: space-between;
-    margin: 40px 50px;
-}
-.section-offers a {
-    text-decoration: none;
-    color: black;
-}
-/* **********************************************************  OFFERS */
-.offers-main{
-    background: #D9D9D9;
-    border-radius:20px ;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    padding: 40px;
-    margin: 0 15px 0 0;
-    width: 70%;
-}
-.ctn-offers{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.card-main{
-    background: #FFFFFF;
-    border-radius: 20px 20px 20px 20px;
-    padding: 5px;
-    margin: 15px 0 ;
-    height: 190px;
-    width: 30%;
-}
-
-.card-main-img{
-    border-radius: 15px 15px 0px 0px;
-    height: 60%;
-    width: 100%;
-    object-fit: cover;
-}
-.details{
-    display: flex;
-    flex-direction: column;
-    margin: 0 15px;
-}
-
-/* *************************************************   SPONSORED */
-.offers-sponsored{
-    background: #D9D9D9;
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
-    margin: 0  0 0 15px;
-    align-items: center;
-    border-radius:20px ;
-    width: 30%;
-}
-.ctn-title-sponsored{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-}
-.ctn-sponsored{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-}
-.card-sponsored{
-    background: #FFFFFF;
-    display: flex;
-    flex-direction: row;
-    border-radius: 20px;
-    padding: 5px;
-    margin: 15px 0;
-    height: 134px;
-}
-.card-sponsored a{
-    display: flex;
-}
-.img-sponsored{
-    border-radius: 15px 0px 0px 15px;
-    width: 37%;
-    object-fit: cover;
-}
-
-/* ************************************************************ A MODIFIER position des étoiles !!!!!!!!!!! */
-
-.details-sponsored{ 
-    /* background-color: red; */
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    margin-left: 15px;
-    width: 100%;
-}
-
-.details-sponsored .stars{
-    
-
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-
-    align-self: flex-end;
-}
-
-
-
-
-
-/* ************************************************************************************** */
-
-/* **************************************************   SECTION ACTIVITY */
-.section-activites{
-    display: flex;
-    flex-direction: column;
-    margin: 0 50px;
-}
-.ctn-activity{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 15px 0;
-}
-.card-activity{
-    background: #FFFFFF;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 10px 10px 5px rgb(214, 214, 214);
-    width: 22%;
-}
-.card-activity img{
-    border-radius: 20px 20px 0px 0px;
-    /* width: 300px;
-    height: 380px; */
-    width: 100%;
-    height: 380px;
-    object-fit: cover;
-}
-.card-activity h3{
-    margin: 20px 0;
-}
-
-
-/* **********************************************************FOOTER */
-footer{
-    background: #F2F2F2;
-    height: 225px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    margin: 50px 50px 0 50px;
-}
-
-.footer-liens{
-    list-style: none;
-    margin: 40px;
-    padding: 0px;
-}
-
-.footer-liens a{
-    display: block;
-    margin: 6px 0px 6px 0px ;
-    text-decoration: none;
-    color: black;
-}
