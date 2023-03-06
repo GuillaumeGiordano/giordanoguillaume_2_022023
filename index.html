@@ -14,30 +14,28 @@
     />
     <!-- link for Css file -->
     <link rel="stylesheet" href="css/style.css" />
-
     <!-- Title -->
     <title>Booki</title>
   </head>
-
   <!-- -------------------------------------------------------------------  BODY -->
   <body>
     <!-- ---------------------------------------------------------------  HEADER -->
     <header class="header">
-      <!-- Logo -->
+      <!------------------------------------Logo -->
       <img
         src="/img/logo/Booki.png"
         class="header__logo"
         alt="logo booki, bleu"
       />
-      <!------------------------------------ NAV -->
+      <!------------------------------------ NAV ?   Pkoi je ne peux pas mettre un logo dans une balise nav ? pkoi ne pas la supp car ca change rien ? -->
       <nav class="header__nav">
         <!-- menu de navigation-->
-        <ul class="header__ul">
-          <li class="header__li">
-            <a href="#results">Hébergements</a>
+        <ul class="header__menu">
+          <li class="header__item">
+            <a class="header__lien" href="#results">Hébergements</a>
           </li>
-          <li class="header__li">
-            <a href="#activitys">Activités</a>
+          <li class="header__item">
+            <a class="header__lien" href="#activities">Activités</a>
           </li>
         </ul>
       </nav>
@@ -46,69 +44,60 @@
     <main class="main">
       <!-- ----------------------------------------------------------------  SECTION TITLE + SEARCH -->
       <section class="search">
-        <!-- Titre principal -->
+        <!-- TITRE -->
         <h1 class="search__title">
           Trouvez un herbergement pour des vacances de rêve
         </h1>
+        <!-- INFORMATIONS -->
         <p class="search__details">En plein centre-ville ou en pleine nature</p>
-
-        <!-- Formulaire de recherche -->
+        <!-- FORMULAIRE -->
         <form action="post" class="search__form">
-          <div class="search__ctn">
-            <!-- En cliquant sur le label, cela nous dirige vers l'input, pourquoi pas ! -->
-            <label for="search" class="search__label">
-              <i class="fa-solid fa-location-dot"></i>
-            </label>
-            <!-- Search -->
-            <input
-              type="text"
-              id="search"
-              name="search"
-              class="search__text"
-              placeholder="Marseille, France"
-            />
-            <!-- Button -->
-
-            <button class="search__btn search__btn--size">
-              <!-- utiliser display: none pour faire disparaitre l'un ou l'autre suivant la taille de l'écran ! -->
-              <!-- <i class="fa-solid fa-money-bill-wave search__i--display"></i> -->
-              <span class="search__spam search__spam--display">Recherche</span>
-            </button>
-          </div>
+          <label for="search" class="search__label">
+            <i class="fa-solid fa-location-dot"></i>
+          </label>
+          <input
+            type="text"
+            id="search"
+            name="search"
+            class="search__text"
+            value="Marseille, France"
+          />
+          <button class="search__btn">
+            <!-- utiliser display: none pour faire disparaitre l'un ou l'autre suivant la taille de l'écran ! -->
+            <i class="fa-solid fa-magnifying-glass search__icon"></i>
+            <span class="search__btn-titre">Recherche</span>
+          </button>
         </form>
-      </section>
-
-      <!-- --------------------------------------------------------------  SECTION FILTRES -->
-      <section class="filtres">
-        <!-- Navigation des liens filtres -->
-        <nav class="filtres__nav">
-          <!-- Filters title -->
+        <!-- FILTRES -- j'ai supprimé la section pour la remplacer par une div qui me permet de mieux                   je suis la !! -->
+        <div class="filtres">
+          <!-- TITRE -->
           <h2 class="filtres__title">Filtres</h2>
-          <!-- Menu filtre -->
-          <ul class="filtres__ul">
-            <li class="filtres__li">
+          <!-- MENU -->
+          <ul class="filtres__menu">
+            <li class="filtres__item">
               <i class="fa-solid fa-money-bill-wave"></i>
-              <p>Economique</p>
+              <span class="">Economique</span>
             </li>
-            <li class="filtres__li">
+            <li class="filtres__item">
               <i class="fa-solid fa-person"></i>
-              <p>Familial</p>
+              <span class="">Familial</span>
             </li>
-            <li class="filtres__li">
-              <i class="fa-solid fa-heart"></i>Romantique
+            <li class="filtres__item">
+              <i class="fa-solid fa-heart"></i>
+              <span class="">Romantique</span>
             </li>
-            <li class="filtres__li">
-              <i class="fa-solid fa-dog"></i>animaux autorisés
+            <li class="filtres__item">
+              <i class="fa-solid fa-dog"></i>
+              <span class="">animaux autorisés</span>
             </li>
           </ul>
-        </nav>
+        </div>
         <!-- Informations result -->
         <p class="filtres__details">
           <i class="fa-solid fa-info circle"></i>
           Plus de 500 logements sont disponibles dans cette ville
         </p>
       </section>
-
       <!-- ---------------------------------------------------------------  SECTION OFFRES + SPONSO -->
       <div class="results" id="results">
         <!-- -------------------------------------------------------------  SECTION OFFERS-->
