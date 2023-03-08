@@ -50,14 +50,22 @@ body{
         font-weight: 700;
         font-size: 16px;
     }
-    /* ************************************************* ICON  */
-    .star{
-        color: #0065FC; 
-    }
-    .star--umpty{
-        color:  #F2F2F2;
-        ;
-    }
+/***************************************************************** ICON  */
+.i__star{
+    color:  #F2F2F2;
+}
+.i__star--full{
+    color: #0065FC; 
+}
+.i__graph, .i__money, .i__person, .i__heart, .i__dog{
+    color: #0065FC;   
+}
+.i__search{
+    color:#FFFFFF;
+}
+.i__search--active{
+    display: block;
+}
 /***************************************************************** HEADER */
 .header{
     display: flex;
@@ -154,9 +162,6 @@ body{
         padding: 0 20px;
         cursor: pointer;
     }
-        .search__icon{
-            color:#FFFFFF;
-        }
         .search__btn-titre{
             font-weight: 700;
             font-size: 18px;
@@ -168,12 +173,12 @@ body{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    width: 100%;
+    flex-basis: 100%;
 }
     .filtres__menu{
         display: flex;
         flex-wrap: wrap;
-        margin: 0 0 0 10px;
+        margin-right:5px;
         padding: 0;
     }
         .filtres__item{
@@ -183,7 +188,7 @@ body{
             border-radius: 25px;
             margin: 10px;
             height: 50px;
-            padding: 0 25px;
+            padding: 0 15px;
             font-weight: 700;
             font-size: 17px;
             cursor: pointer;
@@ -200,17 +205,18 @@ body{
     .filtres__details{
         display: flex;
         align-items: center;
-        margin: 30px 0;
     }
-        .circle{
+        .filtres__circle{
             width: 25px;
             height: 25px;
             border: 1px solid #D9D9D9;
             border-radius: 50%;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             margin-right: 10px;
         }
-/***************************************************************** DIV ACCOMMADATION = RESULTS + POPULAR */
+/***************************************************************** DIV ACCOMMADATION = SECTION RESULTS + SECTION POPULAR */
 .accommodation{
     display: flex;
     justify-content: space-between;
@@ -223,98 +229,100 @@ body{
         border-radius:20px ;
         padding: 40px;
     }
-/* **********************************************************  RESULTS */
+/* **********************************************************  SECTION RESULTS */
 .results{
     margin: 0 15px 0 0;
     flex-basis: 70%;
 }
-.results__ctn{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.results__card{
-    background: #FFFFFF;
-    border-radius: 20px;
-    padding: 5px;
-    margin: 15px 0 ;
-    height: 190px;
-    flex-basis: 30%;
-}
-.results__img{
-    border-radius: 15px 15px 0px 0px;
-    height: 60%;
-    width: 100%;
-    object-fit: cover;
-}
-.results__details{
-    display: flex;
-    flex-direction: column;
-    margin: 0 15px;
-}
-.results__lien{
-    margin-top: auto;
-    margin-bottom: auto;
-}
-/* *************************************************   POPULAR */
+    .results__ctn{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+        .results__card{
+            background: #FFFFFF;
+            border-radius: 20px;
+            padding: 5px;
+            margin: 15px 0 ;
+            height: 190px;
+            flex-basis: 30%;
+        }
+            .results__img{
+                border-radius: 15px 15px 0px 0px;
+                height: 60%;
+                width: 100%;
+                object-fit: cover;
+            }
+            .results__details{
+                display: flex;
+                flex-direction: column;
+                margin: 0 15px;
+            }
+    .results__lien{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+/* *************************************************   SECTION POPULAR */
 .popular{
     align-items: center;
     margin: 0  0 0 15px; 
-    width: 30%;
+    flex-basis: 30%;
 }
-.popular__ctn{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-}
-.popular__card{
-    background: #FFFFFF;
-    display: flex;
-    flex-direction: row;
-    border-radius: 20px;
-    padding: 5px;
-    margin: 15px 0;
-    height: 134px;
-}
-.popular__card a{
-    display: flex;
-}
-.popular__img{
-    border-radius: 15px 0px 0px 15px;
-    width: 37%;
-    object-fit: cover;
-}
-.popular__details{ 
-    display: flex;
-    flex-direction: column;
-    margin-left: 15px;
-}
+    .popular__ctn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 100%;
+    }
+        .popular__card{
+            background: #FFFFFF;
+            display: flex;
+            flex-direction: row;
+            border-radius: 20px;
+            padding: 5px;
+            margin: 15px 0;
+            height: 134px;
+        }
+            .popular__card a{
+                display: flex;
+            }
+            .popular__img{
+                border-radius: 15px 0px 0px 15px;
+                width: 37%;
+                max-width: 37%;
+                object-fit: cover;
+            }
+            .popular__details{ 
+                display: flex;
+                flex-direction: column;
+                margin-left: 15px;
+            }
+            .popular__stars{
+                margin-top: auto;
+            }
 /* *************************************************   SECTION ACTIVITIES */
 .activities{
     display: flex;
     flex-direction: column;
     margin-bottom: 30px ;
 }
-.activities__ctn{
-    display: flex;
-    justify-content: space-between;
-    margin: 15px 0;
-}
-.activities__card{
-    background: #FFFFFF;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 10px 10px 5px rgb(214, 214, 214);
-    width: 22%;
-}
-.activities__img{
-    border-radius: 20px 20px 0px 0px;
-    /* width: 300px;
-    height: 380px; */
-    width: 100%;
-    height: 380px;
-    object-fit: cover;
-}
+    .activities__ctn{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+    }
+        .activities__card{
+            background: #FFFFFF;
+            border-radius: 20px 20px 20px 20px;
+            box-shadow: 8px 8px 15px rgb(214, 214, 214);
+            flex-basis: 23%;
+        }
+            .activities__img{
+                border-radius: 20px 20px 0px 0px;
+                width: 100%;
+                height: 380px;
+                object-fit: cover;
+            }
 /* ********************************************************** FOOTER */
 .footer{
     background: #F2F2F2;
@@ -323,21 +331,67 @@ body{
     display: flex;
     flex-basis: 33%;
 }
-.footer__colum{
-    display: flex;
-    flex-direction: column;
-    flex-basis: 33%;
-}
-.footer__menu{
-    list-style: none;
-    padding: 0px;
-}
+    .footer__colum{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 33%;
+    }
+        .footer__menu{
+            list-style: none;
+            padding: 0px;
+        }
+            .footer__menu li{
+                margin-bottom: 5px;
+            }
 
 /* --------------------------------------------------------- RESPONSIVE 992 */
 @media screen and (max-width: 992px) {
+/***************************************************************** DIV ACCOMMADATION = SECTION RESULTS + SECTION POPULAR */
+.accommodation{
+    /* display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px; */
+    flex-direction: column;
+    margin-bottom: 0;
+}
+    .accommodation__section{
+        /* display: flex;
+        flex-direction: column;
+        background: #D9D9D9;
+        border-radius:20px ;
+        padding: 40px; */
+        margin: 0 0 40px 0 ;
+    }
+/* **********************************************************  SECTION RESULTS */
 
+/* *************************************************   SECTION POPULAR */
+.popular__ctn{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%; */
+    flex-direction: row;
+    justify-content: space-between;
+}
+    .popular__card{
+        /* background: #FFFFFF;
+        display: flex;
+        flex-direction: row;
+        border-radius: 20px;
+        padding: 5px;
+        margin: 15px 0;
+        height: 134px; */
+        flex-basis: 30%;
 
-/* ********************************************************** FOOTER */
+    }
+/* *************************************************   SECTION ACTIVITIES */
+        .activities__img{
+            /* border-radius: 20px 20px 0px 0px;
+            width: 100%;
+            height: 380px;
+            object-fit: cover; */
+            height: 220px;
+        }
 
 
 
