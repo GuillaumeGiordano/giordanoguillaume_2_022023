@@ -9,7 +9,7 @@ body{
     margin: auto;
     padding: 0 50px;
 }
-    /******************************* TITRES et TEXTES */
+/******************************* TITRES et TEXTES */
     /* TEXT type: SECTION H2? */
     .search__title, .results__title, .popular__title, .activities__title{
         margin: 4px 0;
@@ -50,22 +50,6 @@ body{
         font-weight: 700;
         font-size: 16px;
     }
-/***************************************************************** ICON  */
-.i__star{
-    color:  #F2F2F2;
-}
-.i__star--full{
-    color: #0065FC; 
-}
-.i__graph, .i__money, .i__person, .i__heart, .i__dog{
-    color: #0065FC;   
-}
-.i__search{
-    color:#FFFFFF;
-}
-.i__search--active{
-    display: block;
-}
 /***************************************************************** HEADER */
 .header{
     display: flex;
@@ -110,7 +94,7 @@ body{
         }
         .header__item:hover {
             border-top: 2px solid #0065FC;
-    }
+        }
 /***************************************************************** MAIN */
  .main{
     display: flex;
@@ -168,27 +152,30 @@ body{
             color: #FFFFFF;
             margin: 0px 10px;
         }
-/*********************************** SECTION FILTER */
+/*********************************** DIV FILTER */
 .filtres{
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
-    flex-basis: 100%;
+    align-items: center;
 }
+    /* ICI FILTRE TITRE */
     .filtres__menu{
         display: flex;
         flex-wrap: wrap;
-        margin-right:5px;
         padding: 0;
+        flex: content;
+        row-gap: 10px;
+        column-gap: 10px;
     }
         .filtres__item{
             display: flex;
             align-items: center;
+            justify-content: space-around;
+            /* Apparence */
             border: 2px solid #D9D9D9;
             border-radius: 25px;
-            margin: 10px;
             height: 50px;
-            padding: 0 15px;
+            padding: 0 10px;
             font-weight: 700;
             font-size: 17px;
             cursor: pointer;
@@ -199,23 +186,21 @@ body{
         .filtres__item-name{
             margin: 15px;
         }
-        .filtres__icon{
-            color:#0065FC;
-        }
-    .filtres__details{
+/*********************************** DETAILS RECHERCHE */
+.filtres__details{
+    display: flex;
+    align-items: center;
+}
+    .filtres__circle{
         display: flex;
+        justify-content: center;
         align-items: center;
+        min-width: 25px;
+        min-height: 25px;
+        border: 1px solid #D9D9D9;
+        border-radius: 50%;
+        margin-right: 10px;
     }
-        .filtres__circle{
-            width: 25px;
-            height: 25px;
-            border: 1px solid #D9D9D9;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 10px;
-        }
 /***************************************************************** DIV ACCOMMADATION = SECTION RESULTS + SECTION POPULAR */
 .accommodation{
     display: flex;
@@ -225,70 +210,84 @@ body{
     .accommodation__section{
         display: flex;
         flex-direction: column;
-        background: #D9D9D9;
         border-radius:20px ;
-        padding: 40px;
+        padding: 40px; 
     }
 /* **********************************************************  SECTION RESULTS */
-.results{
-    margin: 0 15px 0 0;
+.accommodation__results{
+    background: #D9D9D9;
+    margin: 0 10px 0 0;
     flex-basis: 70%;
 }
+    /* ICI TITRE SECTION */
     .results__ctn{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
+        padding: 20px 0;
+        row-gap: 20px;
+        column-gap: 20px;
     }
         .results__card{
+            /* Apparence de ma carte */
             background: #FFFFFF;
+            box-shadow: 8px 8px 15px rgb(214, 214, 214);
             border-radius: 20px;
             padding: 5px;
-            margin: 15px 0 ;
-            height: 190px;
-            flex-basis: 30%;
+            /* dimmenssion */
+            flex: 30%;
         }
-            .results__img{
-                border-radius: 15px 15px 0px 0px;
-                height: 60%;
-                width: 100%;
-                object-fit: cover;
-            }
-            .results__details{
-                display: flex;
-                flex-direction: column;
-                margin: 0 15px;
-            }
+            /* LIEN */
+                .results__img{
+                    border-radius: 15px 15px 0px 0px;
+                    width: 100%;
+                    object-fit: cover;
+                    height: 110px;
+                    max-height: 110px;
+                }
+                .results__details{
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 15px;
+                    
+                }
     .results__lien{
         margin-top: auto;
         margin-bottom: auto;
     }
 /* *************************************************   SECTION POPULAR */
-.popular{
+.accommodation__popular{
+    background: #D9D9D9; 
     align-items: center;
-    margin: 0  0 0 15px; 
+    margin: 0  0 0 10px; 
     flex-basis: 30%;
 }
     .popular__ctn{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-basis: 100%;
+        flex-wrap: wrap;
+
+        padding: 20px 0;
+
+        row-gap: 20px;
+        column-gap: 20px;
     }
         .popular__card{
-            background: #FFFFFF;
             display: flex;
-            flex-direction: row;
+            /* Apparence de ma carte */
+            background: #FFFFFF;
+            box-shadow: 8px 8px 15px rgb(214, 214, 214);
             border-radius: 20px;
             padding: 5px;
-            margin: 15px 0;
-            height: 134px;
+            /* Dimmenssion */
+            height: 135px;
+            flex: 100%;
         }
             .popular__card a{
                 display: flex;
             }
             .popular__img{
                 border-radius: 15px 0px 0px 15px;
-                width: 37%;
+                min-width: 37%;
                 max-width: 37%;
                 object-fit: cover;
             }
@@ -326,7 +325,7 @@ body{
 /* ********************************************************** FOOTER */
 .footer{
     background: #F2F2F2;
-    height: 200px;
+    /* height: 200px; */
     padding: 20px;
     display: flex;
     flex-basis: 33%;
@@ -343,67 +342,169 @@ body{
             .footer__menu li{
                 margin-bottom: 5px;
             }
+/***************************************************************** ICON  */
+.i__star{
+    color:  #F2F2F2;
+}
+.i__star--full{
+    color: #0065FC; 
+}
+.i__graph, .i__money, .i__person, .i__heart, .i__dog, .i__info{
+    color: #0065FC;   
+}
+.i__search{
+    color:#FFFFFF;
+}
+/* Pourquoi j'y arrive pas avec une class stp ?  */
+/* .i__search--active{
+    display: none;
+} */
+#i__search{
+    display: none;
+}
 
-/* --------------------------------------------------------- RESPONSIVE 992 */
+
+
+
+
+
+/* -----------------------------------------------------------
+ RESPONSIVE 992 
+ -------------------------------------------------------------*/
 @media screen and (max-width: 992px) {
 /***************************************************************** DIV ACCOMMADATION = SECTION RESULTS + SECTION POPULAR */
 .accommodation{
-    /* display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px; */
     flex-direction: column;
     margin-bottom: 0;
 }
     .accommodation__section{
-        /* display: flex;
-        flex-direction: column;
-        background: #D9D9D9;
-        border-radius:20px ;
-        padding: 40px; */
         margin: 0 0 40px 0 ;
     }
-/* **********************************************************  SECTION RESULTS */
-
 /* *************************************************   SECTION POPULAR */
 .popular__ctn{
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%; */
-    flex-direction: row;
-    justify-content: space-between;
+    column-gap: 20px;
 }
     .popular__card{
-        /* background: #FFFFFF;
-        display: flex;
-        flex-direction: row;
-        border-radius: 20px;
-        padding: 5px;
-        margin: 15px 0;
-        height: 134px; */
-        flex-basis: 30%;
-
+        flex: 30%;
+        max-width: 45%;
     }
 /* *************************************************   SECTION ACTIVITIES */
-        .activities__img{
-            /* border-radius: 20px 20px 0px 0px;
-            width: 100%;
-            height: 380px;
-            object-fit: cover; */
-            height: 220px;
-        }
-
-
-
+.activities__img{
+    height: 220px;
+}
 }
 
-/* --------------------------------------------------------- RESPONSIVE 768 */
+
+
+
+
+/* -----------------------------------------------------------
+ RESPONSIVE 768 
+ -------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
-
-
-/* ********************************************************** FOOTER */
+/****************************************************************** BODY  */
+body{
+    padding: 0 ;
+}
+/***************************************************************** HEADER */
+.header{
+    flex-direction: column;
+    margin: 20px 0;
+}
+   /*  NAVIGATION */
+   .header__nav {
+    width: 100%;
+    height: 70px;
+    }
+        .header__menu{
+            justify-content: space-between;
+            padding: 0;
+        }
+        .header__item{
+            flex-basis: 50%;
+            border: none;
+            border-bottom: 3px solid #ffffff;
+        }
+        .header__item:hover {
+            border: none;
+            border-bottom: 3px solid #0065FC;
+        }
+/***************************************************************** SECTION SEARCH */
+.search{
+    padding: 0 20px;
+}
+/******************************************* FORM */
+    .search__text{
+        max-width: none;
+    }
+/******************************************* DIV FILTER */
+    .filtres__menu{
+        justify-content: center;
+    }
+        .filtres__item{
+            justify-content: start;
+            flex: 30%;
+        }
+        .filtres__item-name{
+            margin: 8px;
+            font-size: 11px;
+        }
+/***************************************************************** DIV ACCOMMADATION = SECTION RESULTS + SECTION POPULAR */
+.accommodation{
+    flex-direction: column-reverse;
+}
+.accommodation__section{
+    padding: 20px; 
+}
+/*****************************************************************  SECTION RESULTS */
+.accommodation__results{
+    margin: 0; 
+    background: none; 
+}
+        .results__card{
+            flex: 100%;
+        }
+        .results__lien{
+            display: none;
+        }
+/* *************************************************   SECTION POPULAR*/
+.accommodation__popular{
+    margin: 0; 
+    border-radius: 0 ;
+}
+    .popular__ctn{
+        flex-direction: column;
+    }
+    .popular__card{
+        flex: none;
+        max-width: none;
+    }
+/* *************************************************   SECTION ACTIVITIES*/ 
+.activities{
+    padding: 20px;
+}
+    .activities__ctn{
+        flex-direction: column;
+    }
+        .activities__card{
+            margin-bottom: 20px;
+        }
+            .activities__img{
+                border-radius: 20px 20px 0px 0px;
+                width: 100%;
+                height: 380px;
+                object-fit: cover;
+                height: 120px;
+            }
+/***************************************************************** FOOTER */
 .footer{
     flex-direction: column;
 }
-
+/***************************************************************** ICON  */
+#i__search{
+    display: inline-block;
+}
+.search__btn-titre--active{
+    display: none;
+}
 }
