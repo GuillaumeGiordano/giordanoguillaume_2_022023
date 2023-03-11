@@ -162,10 +162,10 @@ body{
     .filtres__menu{
         display: flex;
         flex-wrap: wrap;
-        padding: 0;
         flex: content;
-        row-gap: 10px;
-        column-gap: 10px;
+        padding: 0;
+        margin-left: 15px;
+        gap: 10px;
     }
         .filtres__item{
             display: flex;
@@ -222,11 +222,11 @@ body{
     /* ICI TITRE SECTION */
     .results__ctn{
         display: flex;
-        flex-wrap: wrap;
+        /* flex-flow: row wrap; === flex-direction: row + flex-wrap: wrap;  */
+        flex-flow: row wrap;
         justify-content: center;
         padding: 20px 0;
-        row-gap: 20px;
-        column-gap: 20px;
+        gap: 20px;
     }
         .results__card{
             /* Apparence de ma carte */
@@ -235,7 +235,8 @@ body{
             border-radius: 20px;
             padding: 5px;
             /* dimmenssion */
-            flex: 30%;
+            /* flex: 1 1 30%; === flex-grow: 1 + flex-shrink: 0 + flex-basis: 30%; */
+            flex: 1 0 30%;
         }
             /* LIEN */
                 .results__img{
@@ -315,6 +316,7 @@ body{
             border-radius: 20px 20px 20px 20px;
             box-shadow: 8px 8px 15px rgb(214, 214, 214);
             flex-basis: 23%;
+            transition: 1s;
         }
             .activities__img{
                 border-radius: 20px 20px 0px 0px;
@@ -322,10 +324,14 @@ body{
                 height: 380px;
                 object-fit: cover;
             }
+            /* BONUS */
+            .activities__card:hover{
+                opacity: 0.5;
+                scale: 1.1; 
+            }
 /* ********************************************************** FOOTER */
 .footer{
     background: #F2F2F2;
-    /* height: 200px; */
     padding: 20px;
     display: flex;
     flex-basis: 33%;
